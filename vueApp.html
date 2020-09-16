@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+
+<div id="app">
+    <h1>Hejsan {{ namn }}</h1>
+</div>
+
+<!-- Importera vueJS-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+<script> 
+    //Vår första vue app 
+    var app = new Vue({
+        el: '#app', //el står för element
+        data: {
+            namn: 'Dilan'
+        }
+
+    })
+
+</script>

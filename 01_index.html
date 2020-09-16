@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<head>
+    <title>En Vue.js App </title>
+</head>
+
+<body>
+    <div id="app">
+    <!-- Template system - endast för innerText-->
+         <h1>{{greeting}} </h1>
+     <!-- Vue.js använder v- som kallas Directive-->   
+    <!-- v-bind är så vanligt att de finns shorthand : -->     
+         <input type="email" :value="greeting"> 
+    </div>
+</body>
+
+<!-- Importera vueJS-->
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script> 
+// Smart att spara hela Vue instansen i en variabel
+    var vm = new Vue({
+        el: '#app',
+        data: {
+            greeting: 'Hello Vue' //kolla vm.greeting i konsolen 
+        }
+    });
+</script>
+</html>
